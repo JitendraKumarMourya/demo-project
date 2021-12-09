@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/login_demo.css' %}">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="header">
+            <img src="{% static 'image/python-logo.jpg' %}" width="50px" height="45px">
+            <h3 class="h3">PYTHON</h3>
+            <ul class="ul">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Help Center</a></li>
+            </ul>
+        </div>
+
+        
+            <div class="div2">
+                <div class="img2"><img src="{% static 'image/giphy3.webp'%}" width="230px" height="190px"></div>
+            <form class="form">
+                <h3 class="login">Login</h3>
+                <input type="text" name="email" placeholder="Email" id="tb">
+                <br><br>
+                <input type="text"  name="password" placeholder="Password" id="tb">
+                <br>
+                <a href="" class="fp">forgot your passpord?</a>
+                <br><br>
+                <input type="button" name="login" value="Login" id="bt">
+                
+                <p class="p1">don't have an account?
+                    <a href="" class="p">Sign Up</a>
+                </p>
+            </form>
+            
+        </div>
+        <div class="div3">
+            
+        </div>
+        
+        <h1>adding headline here .......</h1>
+    </div>
+</body>
+</html>

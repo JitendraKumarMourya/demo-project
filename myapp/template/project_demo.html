@@ -1,0 +1,165 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project demo2</title>
+    <style>
+        .container{
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 800px;
+        }
+        .header{
+            /* border: 2px solid black; */
+            background: #212F3D;
+            color: white;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding:2px;
+            padding-left: 50px;
+        }
+        .python{
+            padding-left: 10px;
+        }
+        .ul{
+            float: right;
+            padding-left: 520px;
+        }
+        .ul li{
+            list-style-type: none;
+            display: inline;
+            margin: 10px;
+        }
+        .ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .select{
+            background-color: #212F3D;
+            border: transparent;
+            color: white;
+        }
+
+        .div2{
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border: 1px solid green;
+            background: #D0D3D4;
+            text-align: center;
+            padding: 2px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .form{
+            /* background-color: #BFC9CA; */
+            border: 1px thin green;
+            float: right;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+            padding-right: 30px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            
+            
+        }
+        .img{
+            border: 2px solid yellow;
+            background-image: url("{% static 'image/python-back.jpg' %}");
+            height: 550px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            
+            
+        }
+        .img2{
+            
+            padding-left: 150px;
+            padding-top: 130px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="{% static 'image/python-logo.jpg'%}" width="50px;" height="50px">
+            <h3 class="python">Python</h3>
+            <ul class="ul">
+                <li><a href="">Home</li></a>
+                <li><a href="">Course</li></a>
+                <li><a href="">Prices</li></a>
+            <select class="select">
+                <option value="0">Duration</option>
+                <option value="1">3 Months</option>
+                <option value="2">6 Months</option>
+                <option value="3">1 year</option>
+            </select>
+            </ul>
+        </div>
+        <div class="div2">
+            <h1>Python</h1>
+            Python is an interpreted, interactive, object-oriented programming language. 
+            It incorporates modules, exceptions, dynamic typing, very high level dynamic data types, and classes. 
+            It supports multiple programming paradigms beyond object-oriented programming, 
+            such as procedural and functional programming.<p></p>
+        </div>
+        <div class="div3">
+            <form class="form">
+                <h2>Registration Form</h2>
+                <hr>
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" value="" placeholder="Enter your First Name" size="20">
+                <br><br>
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" value="" placeholder="Enter your Last Name">
+                <br><br>
+                <label for="age">Date of Birth :</label>
+                <input type="date" name="date" value="">
+                <br><br>
+                <label for="email">Email :</label>
+                <input type="text" name="email" value="" placeholder="Enter your Email">
+                <br><br>
+                <label for="mobile">Phone Number :</label>
+                <input type="text" name="mobile" value="" placeholder="+91">
+                <br><br>
+                <label for="gender">Gender :</label>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <br><br>
+                <label for="place">Place :</label>
+                <select name="city">
+                    <option>Choose City</option>
+                    <option value="">Calicut</option>
+                    <option value="">Trivandrum</option>
+                    <option value="">Kochi</option>
+                    <option value="">Kottayam</option>
+                    <option value="">Alappuzha</option>
+                </select>
+                <br><br>
+                <label for="address">Address :</label>
+                <textarea></textarea>
+                <br><br>
+                <label for="language">Languages :</label>
+                <input type="checkbox" name="language" value="hindi">Hindi
+                <input type="checkbox" name="language" value="hindi">English
+                <input type="checkbox" name="language" value="hindi">Malayalam
+                <input type="checkbox" name="language" value="hindi">Others
+                <br><br>
+                <label for="image">Image :</label>
+                <input type="file" name="image" value="image">
+                <br><br>
+                <input type="button" name="submit" value="Submit"> 
+                <input type="button" name="reset" value="Reset">
+                <hr>
+        </form></div>
+        <div class="img">
+        <div class="img2"><img src="{% static 'image/giphy3.webp' %}" width="250px" height="250px"></div></div>
+    </div>
+</body>
+</html>
